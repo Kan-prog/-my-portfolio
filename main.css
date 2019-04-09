@@ -132,8 +132,6 @@ h2{
   top: 10px;
   width: 16vw;
   color: #fff;
-  /*background: #fff;*/
-  /*position: relative;*/
   height: 100vh;
   border-right: 0.5px solid #000;
 }
@@ -170,7 +168,6 @@ footer{
 
 .works-content .works-img {
   min-height: 50vh;
-  /*background-color: #ddd;*/
 }
 
 

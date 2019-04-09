@@ -27,20 +27,11 @@ $(document).ready(function(){
   });
 });
 
-// // サイドバー移動機能
-// function updateButton(){
-//   if ($(this).scrollTop()>=300){
-//     $("#gnav").fadeIn();
-//   }else{
-//     $("#gnav").fadeOut();
-//   }
-// }
+// サイドバー移動機能
 
 $(document).ready(function(){
   // updateButton();
 
-  // // スクロールされる度にupdateButtonを実行
-  // $(window).scroll(updateButton);
 
   // topへ移動
   $("#to-top").click(function() {
