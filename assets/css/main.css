@@ -7,6 +7,14 @@ body{
 a{
   color: #000;
 }
+h1{
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+h2{
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
 .container {
   padding: 1%;
 }
