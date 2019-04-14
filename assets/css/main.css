@@ -299,6 +299,9 @@ h2{
     display: block;
     padding: 10px 0;
 }
+.sign{
+  color: #959090;
+}
 footer{
   display: flex;
   align-items: center;

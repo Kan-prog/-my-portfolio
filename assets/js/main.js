@@ -22,7 +22,6 @@ $(document).ready(function() {
       content.slideUp();
       $("#tag").html("▼");
     }
-    // return false;
   });
 });
 
@@ -120,12 +119,27 @@ var currentSlide = 0;
 
 // スライドの全枚数
 var numSlides;
-// スライド1枚当たりの幅・高さ
 
-var slideWidth
+// スライド1枚当たりの幅
+var slideWidth;
+
+// クリックしたモーダル
+// var activeModal; 
 // index（0から始まる）番目のスライドを表示する関数
 function showSlide(index) {
   slideWidth = $(".carousel img")[0].clientWidth;
+  
+  // activeModal = $(".modal:active");
+  
+  // クリックしたらactive付与
+  // $("modal").click(function(){
+  //   $(this).addClass("active");
+  // });
+  
+  // moddal-container以外クリックしたらactive除去
+  // $(":not(.modaal-container)").click(function() {
+  //     $(activeModal).removeClass("active");
+  // });
   
   // 1番目のスライドでは左矢印を非表示
   if (index === 0) {
@@ -157,7 +171,7 @@ $(document).ready(function() {
   numSlides = $(".slides > li").length;
   // 最初のスライドを表示
   showSlide(currentSlide);
-
+  console.log($(".slides"));
   // 左矢印がクリックされたら1つ前のスライドを表示
   $(".carousel-control-prev").click(function() {
     currentSlide--;
@@ -172,7 +186,6 @@ $(document).ready(function() {
     return false;
   });
   console.log(slideWidth);
-  console.log($(".carousel img"));
-  // console.log(slideWidth);
+  console.log($(".slides .carousel img"));
 });
 
